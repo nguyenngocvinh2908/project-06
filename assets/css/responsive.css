@@ -1,0 +1,132 @@
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (max-width: 1199.98px) {
+    /* Header */
+
+    .container-header {
+        max-width: 100%;
+    }
+    
+    .header-inner {
+        display: none;
+    }
+
+    .header-wrap__logo {
+        margin-left: 0;
+        width: 37px;
+        height: 44px;
+    }
+
+    .header-wrap__address {
+        margin-left: auto;
+        margin-right: 10px;
+        width: 32px;
+        height: 32px;
+    }
+    
+    .label-nav {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+    }
+
+    .label-icon {
+        width: 100%;
+        height: 100%;
+    }
+
+    .form-nav__wrapper {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        background: transparent;
+        transition: all 0.5s ease;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+    }
+    #form-checkbox:checked ~ .form-nav__wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 100vh;
+        background: #fff;
+        overflow: visible;
+    }
+
+    .form-space {
+        width: 40%;
+        height: 100%;
+        background: #ccc;
+    }
+
+    .label-space {
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .form-nav-list {
+        width: 60%;
+        height: 100%;
+        background: white;
+        padding: 40px 20px;
+        opacity: 0;
+        transform: translateX(20px);
+        transition: all 0.3s ease;
+    }
+
+    #form-checkbox:checked ~ .form-nav__wrapper .form-nav-list {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .header-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .header-list__item {
+        margin-top: 30px;
+    }
+
+    .header-item--link {
+        width: 100%;
+    }
+    .header-nav {
+        display: none;
+    }
+
+    
+} 
+
+@media (min-width: 1200px) {
+    .show-on-pc {
+        display: none;
+    }
+
+    .form-nav {
+        display: none;
+    }
+}
+
