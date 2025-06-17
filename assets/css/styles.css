@@ -74,6 +74,8 @@ a  {
 .header-row {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    row-gap: 15.5px;
 }
 
 .header-inner {
@@ -146,7 +148,8 @@ a  {
 }
 
 .hero-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     column-gap: 156px;
 }
 
@@ -242,7 +245,7 @@ a  {
     column-gap: 13px;
 }
 
-.client-wrapper__title::before {
+.client-wrapper__title::before {    
     display: block;
     content: "";
     margin-top: 22px;
@@ -250,8 +253,6 @@ a  {
     height: 2px;
     background: #5D3BEE;
 }
-
-
 
 .client-title {
     width: 253px;
@@ -332,7 +333,7 @@ a  {
 }
 
 .special-item {
-    max-width: 370px;
+    max-width: 100%;
     padding : 32px 27px;
     background: #FBFAFF;
     transition: 0.3s ease;
@@ -393,7 +394,7 @@ a  {
 
 .project-top__desc {
     margin-top: 31px;
-    width: 370px;
+    max-width: 370px;
     color: rgb(255 255 255 / 70%);
 }
 
@@ -408,7 +409,7 @@ a  {
     position: relative;
     display: flex;
     column-gap: 47px;
-    width: 570px;
+    max-width: 570px;
     padding: 24px 23px 23px 34px;
     background: #FBFAFF;
     z-index: 1;
@@ -464,16 +465,6 @@ a  {
     z-index: -1;
 }
 
-@keyframes shake {
-    0%, 100% { transform: translateX(0) rotate(-135.011deg); }
-    25% { transform: translateX(5px) rotate(-135.011deg); }
-    75% { transform: translateX(-5px) rotate(-135.011deg); }
-}
-
-.project-deco {
-    display: inline-block;
-    animation: shake 0.6s infinite;
-}
 
 .project-list .project-deco:nth-child(3) {
     width: 63.715px;
@@ -985,12 +976,6 @@ a  {
     z-index: -1;
 }
 
-@keyframes shake-2 {
-    0%, 100% { transform: translateY(0) rotate(-45.011deg)}
-    25% { transform: translateY(5px) rotate(-45.011deg)}
-    75% { transform: translateY(-5px) rotate(-45.011deg)}
-}
-
 .cta-deco-2 {
     height: 71.7px;
 }
@@ -1065,9 +1050,6 @@ a  {
 
 }
 
-.cta-deco {
-    animation: shake-2 1.5s infinite;
-}
 
 /* Footer */
 .footer {
@@ -1076,6 +1058,11 @@ a  {
 
 .container-footer {
     max-width: 1429px;
+}
+
+.footer-wrapper__logo {
+    width: 100px;
+    height: 100px;
 }
 
 .footer-separate {

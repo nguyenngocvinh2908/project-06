@@ -88,6 +88,15 @@
             content="./assets/favicon/ms-icon-144x144.png"
         />
         <meta name="theme-color" content="#ffffff" />
+        <!-- Link FontAesome -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <!-- Link Animation -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- Link CSS -->
@@ -125,52 +134,81 @@
 
                     <!-- This Mobile And Table -->
                     <div class="header-wrap__address show-on-pc">
-                            <img
-                                src="./assets/icon/heart-mobile.svg"
-                                alt=""
-                                class="header-address__icon"
-                            />
+                        <img
+                            src="./assets/icon/heart-mobile.svg"
+                            alt=""
+                            class="header-address__icon"
+                        />
                     </div>
 
                     <!-- Nav Mobile And Table -->
                     <form action="" class="form-nav">
                         <label for="form-checkbox" class="label-nav">
-                            <img src="./assets/icon/nav.svg" alt="" class="label-icon">
+                            <img
+                                src="./assets/icon/nav.svg"
+                                alt=""
+                                class="label-icon"
+                            />
                         </label>
-                        <input type="checkbox" name="" id="form-checkbox" class="input-checkbox" checked hidden>
+                        <input
+                            type="checkbox"
+                            name=""
+                            id="form-checkbox"
+                            class="input-checkbox"
+                            hidden
+                        />
                         <div class="form-nav__wrapper">
                             <div class="form-space">
-                                <label for="form-checkbox" class="label-space"></label>
+                                <label
+                                    for="form-checkbox"
+                                    class="label-space"
+                                ></label>
                             </div>
                             <div class="form-nav-list">
                                 <nav class="header-nav-mobile">
                                     <ul class="header-list">
                                         <li class="header-list__item">
-                                            <a href="#!" class="header-item--link">
+                                            <a
+                                                href="#!"
+                                                class="header-item--link"
+                                            >
                                                 Projects
                                             </a>
                                         </li>
                                         <li class="header-list__item">
-                                            <a href="#!" class="header-item--link">
+                                            <a
+                                                href="#!"
+                                                class="header-item--link"
+                                            >
                                                 Journey
                                             </a>
                                         </li>
                                         <li class="header-list__item">
-                                            <a href="#!" class="header-item--link">
+                                            <a
+                                                href="#!"
+                                                class="header-item--link"
+                                            >
                                                 Service
                                             </a>
                                         </li>
                                         <li class="header-list__item">
-                                            <a href="#!" class="header-item--link">
+                                            <a
+                                                href="#!"
+                                                class="header-item--link"
+                                            >
                                                 Contact
                                             </a>
                                         </li>
                                     </ul>
                                 </nav>
-
+                                <label for="form-checkbox" class="form-icon">
+                                    <i class="fa-solid fa-xmark x-icon"></i>
+                                </label>
                             </div>
                         </div>
                     </form>
+
+                    <div class="header-separate"></div>
 
                     <!-- Nav -->
 
@@ -207,7 +245,11 @@
                 <div class="container g-xl-0">
                     <div class="hero-row">
                         <!-- Media -->
-                        <div class="hero-wrapper__media" data-aos = "fade-right" data-aos-anchor-placement="top-center">
+                        <div
+                            class="hero-wrapper__media"
+                            data-aos="fade-right"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <div class="hero-wrapper_img">
                                 <img
                                     src="./assets/image/hero-01.svg"
@@ -218,7 +260,11 @@
                         </div>
 
                         <!-- Content -->
-                        <div class="hero-wrapper__content" data-aos = "fade-left" data-aos-anchor-placement="top-center">
+                        <div
+                            class="hero-wrapper__content"
+                            data-aos="fade-left"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <div class="hero-inner__content">
                                 <h1
                                     class="section--heading hero-content__heading"
@@ -242,7 +288,9 @@
                                     <span class="hero-social__instr">
                                         Follow me on:
                                     </span>
-                                    <div class="hero-social__blocks">
+                                    <div
+                                        class="hero-social__blocks show-social"
+                                    >
                                         <svg
                                             width="40"
                                             height="40"
@@ -311,6 +359,82 @@
                                             />
                                         </svg>
                                     </div>
+
+                                    <!-- Show on Mobile Tab -->
+                                    <div
+                                        class="hero-social__blocks show-on-mobiletab"
+                                    >
+                                        <!-- Be -->
+                                        <svg
+                                            width="31"
+                                            height="31"
+                                            viewBox="0 0 31 31"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <circle
+                                                opacity="0.1"
+                                                cx="15.5"
+                                                cy="15.5"
+                                                r="15"
+                                                stroke="#080415"
+                                            />
+                                            <path
+                                                d="M17.3961 12.1377H20.4903V12.885H17.3961V12.1377ZM14.2957 15.0947C14.9797 14.7689 15.338 14.2732 15.338 13.5073C15.338 11.9925 14.2058 11.625 12.8983 11.625H9.30005V19.2283H12.9991C14.3857 19.2283 15.6869 18.5643 15.6869 17.0202C15.6869 16.0659 15.2341 15.3603 14.2957 15.0947ZM10.9782 12.9221H12.5524C13.1589 12.9221 13.7033 13.0904 13.7033 13.7914C13.7033 14.4369 13.2798 14.6963 12.6796 14.6963H10.9782V12.9221ZM12.7696 17.9374H10.9766V15.8436H12.8052C13.5435 15.8436 14.0103 16.1509 14.0103 16.9291C14.0103 17.695 13.4535 17.9374 12.7696 17.9374ZM21.7 16.5554C21.7 14.9264 20.7431 13.5691 19.0122 13.5691C17.3294 13.5691 16.1848 14.8306 16.1848 16.4844C16.1848 18.1984 17.2689 19.375 19.0122 19.375C20.3321 19.375 21.1867 18.7836 21.5977 17.522H20.2592C20.1134 17.993 19.5209 18.2401 19.0603 18.2401C18.17 18.2401 17.7048 17.7212 17.7048 16.8395H21.6892C21.6938 16.7484 21.7 16.6527 21.7 16.5554ZM17.7048 15.8853C17.7528 15.1611 18.2383 14.7086 18.9641 14.7086C19.7272 14.7086 20.1088 15.1549 20.1754 15.8853H17.7048Z"
+                                                fill="#080415"
+                                            />
+                                        </svg>
+
+                                        <!-- Volleyball -->
+                                        <svg
+                                            width="32"
+                                            height="31"
+                                            viewBox="0 0 32 31"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <circle
+                                                opacity="0.1"
+                                                cx="16"
+                                                cy="15.5"
+                                                r="15"
+                                                stroke="#080415"
+                                            />
+                                            <path
+                                                d="M21.22 12.4744C20.6811 11.5503 19.9499 10.8186 19.0253 10.2803C18.1012 9.74201 17.0928 9.47256 15.9999 9.47256C14.9071 9.47256 13.8987 9.74201 12.974 10.2803C12.0499 10.8186 11.3182 11.5503 10.7799 12.4744C10.2416 13.3985 9.97217 14.4075 9.97217 15.5003C9.97217 16.5932 10.241 17.6022 10.7799 18.5263C11.3188 19.4509 12.0499 20.1821 12.9746 20.7204C13.8987 21.2587 14.9071 21.5281 15.9999 21.5281C17.0928 21.5281 18.1012 21.2587 19.0259 20.7204C19.95 20.1821 20.6817 19.4509 21.2206 18.5263C21.7589 17.6022 22.0277 16.5932 22.0277 15.5003C22.0277 14.4075 21.7589 13.3985 21.22 12.4744ZM15.9999 10.4732C17.2055 10.4732 18.2736 10.859 19.2067 11.6299C18.6522 12.3376 17.8288 12.9199 16.7353 13.378C16.1314 12.2851 15.4767 11.3725 14.7697 10.6414C15.1808 10.5292 15.5895 10.4732 15.9999 10.4732ZM12.0879 12.3659C12.5424 11.7951 13.0861 11.3496 13.722 11.0277C14.4526 11.7517 15.1235 12.6552 15.7353 13.7402C14.5298 14.1019 13.2555 14.2827 11.9131 14.2827C11.5677 14.2827 11.3067 14.2749 11.1295 14.2586C11.3146 13.5672 11.634 12.9367 12.0879 12.3659ZM10.9728 15.5003C10.9728 15.4678 10.9746 15.428 10.9788 15.3798C10.983 15.3316 10.9848 15.2918 10.9848 15.2592C11.1379 15.2677 11.3712 15.2713 11.6847 15.2713C13.2917 15.2713 14.7866 15.0501 16.1687 14.6082C16.2814 14.8331 16.3984 15.0862 16.5183 15.3677C15.7227 15.5443 14.9065 15.9741 14.0705 16.6577C13.2344 17.3412 12.6244 18.0603 12.2386 18.8156C11.3947 17.859 10.9728 16.7541 10.9728 15.5003ZM15.9999 20.5275C14.8583 20.5275 13.8336 20.1737 12.9252 19.4672C13.2874 18.7517 13.8438 18.0676 14.5955 17.4172C15.3465 16.7662 16.0922 16.3605 16.8318 16.1996C17.2971 17.4853 17.6112 18.815 17.7721 20.19C17.185 20.4148 16.5943 20.5275 15.9999 20.5275ZM20.2676 18.1405C19.8662 18.7831 19.3478 19.3099 18.7124 19.7204C18.5678 18.4666 18.2905 17.2448 17.8812 16.0549C18.443 16.0151 18.9451 15.9946 19.3882 15.9946C19.8698 15.9946 20.4044 16.0151 20.9909 16.0549C20.9102 16.8023 20.6691 17.4973 20.2676 18.1405ZM19.5202 15.1266C18.8209 15.1266 18.1742 15.155 17.5792 15.211C17.4261 14.8174 17.2899 14.4919 17.1693 14.2345C18.4147 13.6884 19.2983 13.0253 19.821 12.2453C20.5443 13.0977 20.9385 14.07 21.0024 15.1628C20.5129 15.1387 20.0187 15.1266 19.5202 15.1266Z"
+                                                fill="#080415"
+                                            />
+                                        </svg>
+
+                                        <!-- Instagram -->
+                                        <svg
+                                            width="31"
+                                            height="31"
+                                            viewBox="0 0 31 31"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <circle
+                                                opacity="0.1"
+                                                cx="15.5"
+                                                cy="15.5"
+                                                r="15"
+                                                stroke="#080415"
+                                            />
+                                            <path
+                                                d="M21.3057 12.9608C21.2779 12.3303 21.176 11.8969 21.0299 11.5213C20.8793 11.1226 20.6474 10.7656 20.3438 10.4689C20.047 10.1676 19.6877 9.93342 19.2937 9.7851C18.9159 9.63905 18.4847 9.53709 17.8542 9.50929C17.219 9.47914 17.0174 9.47217 15.4063 9.47217C13.7953 9.47217 13.5937 9.47914 12.9608 9.50694C12.3303 9.53474 11.8969 9.63678 11.5214 9.78275C11.1226 9.93342 10.7656 10.1652 10.4689 10.4689C10.1676 10.7656 9.93351 11.1249 9.7851 11.519C9.63905 11.8969 9.53709 12.328 9.50929 12.9585C9.47914 13.5937 9.47217 13.7953 9.47217 15.4063C9.47217 17.0174 9.47914 17.219 9.50694 17.8519C9.53474 18.4824 9.63678 18.9158 9.78284 19.2914C9.93351 19.6901 10.1676 20.047 10.4689 20.3438C10.7656 20.6451 11.1249 20.8793 11.519 21.0276C11.8969 21.1736 12.328 21.2756 12.9585 21.3034C13.5913 21.3313 13.793 21.3382 15.4041 21.3382C17.0151 21.3382 17.2168 21.3313 17.8496 21.3034C18.4801 21.2756 18.9135 21.1736 19.289 21.0276C20.0865 20.7193 20.717 20.0888 21.0253 19.2914C21.1713 18.9135 21.2733 18.4824 21.3011 17.8519C21.3289 17.219 21.3359 17.0174 21.3359 15.4063C21.3359 13.7953 21.3335 13.5937 21.3057 12.9608ZM20.2372 17.8055C20.2116 18.385 20.1143 18.6979 20.0332 18.9066C19.8338 19.4235 19.4235 19.8338 18.9066 20.0332C18.6979 20.1143 18.3827 20.2116 17.8055 20.2371C17.1796 20.265 16.9919 20.2719 15.4087 20.2719C13.8255 20.2719 13.6354 20.265 13.0118 20.2371C12.4323 20.2116 12.1193 20.1143 11.9107 20.0332C11.6535 19.9381 11.4193 19.7874 11.2293 19.5904C11.0322 19.398 10.8816 19.1662 10.7865 18.9089C10.7053 18.7003 10.608 18.385 10.5826 17.8079C10.5547 17.182 10.5478 16.9942 10.5478 15.411C10.5478 13.8277 10.5547 13.6377 10.5826 13.0141C10.608 12.4346 10.7053 12.1217 10.7865 11.9131C10.8816 11.6557 11.0322 11.4217 11.2316 11.2315C11.4239 11.0345 11.6557 10.8838 11.9131 10.7888C12.1217 10.7077 12.437 10.6104 13.0141 10.5848C13.64 10.557 13.8278 10.5501 15.411 10.5501C16.9965 10.5501 17.1843 10.557 17.8079 10.5848C18.3874 10.6104 18.7003 10.7077 18.9089 10.7888C19.1662 10.8838 19.4003 11.0345 19.5904 11.2315C19.7874 11.4239 19.9381 11.6557 20.0332 11.9131C20.1143 12.1217 20.2116 12.4369 20.2372 13.0141C20.265 13.64 20.2719 13.8277 20.2719 15.411C20.2719 16.9942 20.265 17.1796 20.2372 17.8055Z"
+                                                fill="#080415"
+                                            />
+                                            <path
+                                                d="M15.4058 12.3584C13.7229 12.3584 12.3575 13.7237 12.3575 15.4066C12.3575 17.0895 13.7229 18.4548 15.4058 18.4548C17.0887 18.4548 18.454 17.0895 18.454 15.4066C18.454 13.7237 17.0887 12.3584 15.4058 12.3584ZM15.4058 17.3839C14.314 17.3839 13.4285 16.4984 13.4285 15.4066C13.4285 14.3148 14.314 13.4293 15.4058 13.4293C16.4976 13.4293 17.3831 14.3148 17.3831 15.4066C17.3831 16.4984 16.4976 17.3839 15.4058 17.3839Z"
+                                                fill="#080415"
+                                            />
+                                            <path
+                                                d="M19.2863 12.2375C19.2863 12.6304 18.9678 12.949 18.5748 12.949C18.1819 12.949 17.8633 12.6304 17.8633 12.2375C17.8633 11.8445 18.1819 11.526 18.5748 11.526C18.9678 11.526 19.2863 11.8445 19.2863 12.2375Z"
+                                                fill="#080415"
+                                            />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -322,10 +446,18 @@
             <section class="client">
                 <div class="container g-xl-0">
                     <div class="client-row">
-                        <div class="client-wrapper__title" data-aos = "fade-right" data-aos-anchor-placement="center-center">
+                        <div
+                            class="client-wrapper__title"
+                            data-aos="fade-right"
+                            data-aos-anchor-placement="center-center"
+                        >
                             <p class="client-title">Meet my recent clients</p>
                         </div>
-                        <div class="client-wrapper__brands" data-aos = "zoom-in-down" data-aos-anchor-placement="center-center">
+                        <div
+                            class="client-wrapper__brands"
+                            data-aos="zoom-in-down"
+                            data-aos-anchor-placement="center-center"
+                        >
                             <!-- Item 1 -->
                             <div class="client-brand--item">
                                 <div class="client-inner__logo">
@@ -436,7 +568,11 @@
             <!-- Special -->
             <section class="special">
                 <div class="container g-xl-0">
-                    <div class="special-top" data-aos = "fade-down" data-aos-anchor-placement="top-center">
+                    <div
+                        class="special-top"
+                        data-aos="fade-down"
+                        data-aos-anchor-placement="top-center"
+                    >
                         <h2 class="section--heading-2 special-top__heading">
                             Specialities
                         </h2>
@@ -450,7 +586,11 @@
 
                     <div class="special-row">
                         <!-- Item 1 -->
-                        <div class="special-item" data-aos = "flip-down" data-aos-anchor-placement="top-center">
+                        <div
+                            class="special-item full-width"
+                            data-aos="flip-down"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <div class="special-wrapper__icon">
                                 <img
                                     src="./assets/icon/tip.svg"
@@ -472,7 +612,11 @@
                         </div>
 
                         <!-- Item 2 -->
-                        <div class="special-item" data-aos = "flip-down" data-aos-anchor-placement="top-center">
+                        <div
+                            class="special-item"
+                            data-aos="flip-down"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <div class="special-wrapper__icon">
                                 <img
                                     src="./assets/icon/ruler.svg"
@@ -494,7 +638,11 @@
                         </div>
 
                         <!-- Item 3 -->
-                        <div class="special-item" data-aos = "flip-down" data-aos-anchor-placement="top-center">
+                        <div
+                            class="special-item"
+                            data-aos="flip-down"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <div class="special-wrapper__icon">
                                 <img
                                     src="./assets/icon/mobile.svg"
@@ -515,6 +663,12 @@
                             </p>
                         </div>
                     </div>
+
+                    <div class="special-dots">
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
                 </div>
             </section>
 
@@ -522,11 +676,19 @@
             <section class="project">
                 <div class="container g-xl-0">
                     <div class="project-top">
-                        <h2 class="section--heading-2 project-top__heading" data-aos = "fade-right" data-aos-anchor-placement="center-bottom">
+                        <h2
+                            class="section--heading-2 project-top__heading"
+                            data-aos="fade-right"
+                            data-aos-anchor-placement="center-bottom"
+                        >
                             Take a look at<br />my recent projects
                         </h2>
 
-                        <p class="section--desc project-top__desc" data-aos = "fade-left" data-aos-anchor-placement="center-bottom">
+                        <p
+                            class="section--desc project-top__desc"
+                            data-aos="fade-left"
+                            data-aos-anchor-placement="center-bottom"
+                        >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. In urna, non nisl tincidunt ut elementum
                             turpis.
@@ -537,7 +699,7 @@
                         <!--List -->
                         <div class="project-list">
                             <!-- Item 1 -->
-                            <div class="project-list__item" data-aos = "fade-right" data-aos-anchor-placement="center-center">
+                            <div class="project-list__item">
                                 <!-- Content -->
                                 <div class="project-wrapper__content">
                                     <h3
@@ -572,7 +734,7 @@
                             </div>
 
                             <!-- Item 2 -->
-                            <div class="project-list__item" data-aos = "fade-left" data-aos-anchor-placement="center-center">
+                            <div class="project-list__item">
                                 <!-- Content -->
                                 <div class="project-wrapper__content">
                                     <h3
@@ -607,7 +769,7 @@
                             </div>
 
                             <!-- Item 3 -->
-                            <div class="project-list__item" data-aos = "fade-right" data-aos-anchor-placement="center-center">
+                            <div class="project-list__item">
                                 <!-- Content -->
                                 <div class="project-wrapper__content">
                                     <h3
@@ -642,7 +804,7 @@
                             </div>
 
                             <!-- Item 4 -->
-                            <div class="project-list__item" data-aos = "fade-left" data-aos-anchor-placement="center-center">
+                            <div class="project-list__item">
                                 <!-- Content -->
                                 <div class="project-wrapper__content">
                                     <h3
@@ -677,7 +839,11 @@
                             </div>
                         </div>
                         <!-- Button -->
-                        <div class="project-wrapper__btn" data-aos="zoom-out-up" data-aos-anchor-placement="center-bottom">
+                        <div
+                            class="project-wrapper__btn"
+                            data-aos="zoom-out-up"
+                            data-aos-anchor-placement="center-bottom"
+                        >
                             <a href="#!" class="btn project-btn">
                                 All Projects
                             </a>
@@ -689,7 +855,11 @@
             <!-- About -->
             <section class="about">
                 <div class="container g-xl-0">
-                    <div class="about-top" data-aos="flip-up" data-aos-anchor-placement="top-center">
+                    <div
+                        class="about-top"
+                        data-aos="flip-up"
+                        data-aos-anchor-placement="top-center"
+                    >
                         <div class="about-top__subtitle">
                             <span class="about-subtitle__name">
                                 Hey,,,,It’s Arif
@@ -743,7 +913,11 @@
                             <span class="about-top__intro"> Intro Video </span>
                         </figure>
                     </div>
-                    <div class="about-bottom" data-aos="zoom-in-up" data-aos-anchor-placement="top-center">
+                    <div
+                        class="about-bottom"
+                        data-aos="zoom-in-up"
+                        data-aos-anchor-placement="top-center"
+                    >
                         <h2
                             class="section--heading-2 about-top__heading about-bottom__heading"
                         >
@@ -873,10 +1047,18 @@
             <section class="question">
                 <div class="container g-xl-0">
                     <div class="question-inner">
-                        <h2 class="section--heading-2 question-heading" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                        <h2
+                            class="section--heading-2 question-heading"
+                            data-aos="fade-right"
+                            data-aos-anchor-placement="top-center"
+                        >
                             A few questions <br />clients normally ask me
                         </h2>
-                        <form class="question-wrapper__form" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
+                        <form
+                            class="question-wrapper__form"
+                            data-aos="zoom-out-up"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <!-- Question 1 -->
                             <input
                                 type="checkbox"
@@ -902,11 +1084,21 @@
                                 </div>
                                 <label for="extend" class="form-label">
                                     <img
+                                        srcset="
+                                            ./assets/icon/extend-mobi.svg 33w,
+                                            ./assets/icon/extend.svg 50w
+                                        "
+                                        sizes="(max-width: 1199.98px) 33px, 50px"
                                         src="./assets/icon/extend.svg"
                                         alt=""
                                         class="question-icon__extend"
                                     />
                                     <img
+                                        srcset="
+                                            ./assets/icon/collapse-mobi.svg 33w,
+                                            ./assets/icon/collapse.svg 50w
+                                        "
+                                        sizes="(max-width: 1199.98px) 33px, 50px"
                                         src="./assets/icon/collapse.svg"
                                         alt=""
                                         class="question-icon__collsape"
@@ -916,7 +1108,11 @@
                             <div class="question-separate"></div>
                         </form>
 
-                        <form class="question-wrapper__form" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
+                        <form
+                            class="question-wrapper__form"
+                            data-aos="zoom-out-up"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <!-- Question 2 -->
                             <input
                                 type="checkbox"
@@ -942,11 +1138,21 @@
                                 </div>
                                 <label for="extend-2" class="form-label">
                                     <img
+                                        srcset="
+                                            ./assets/icon/extend-mobi.svg 33w,
+                                            ./assets/icon/extend.svg 50w
+                                        "
+                                        sizes="(max-width: 1199.98px) 33px, 50px"
                                         src="./assets/icon/extend.svg"
                                         alt=""
                                         class="question-icon__extend"
                                     />
                                     <img
+                                        srcset="
+                                            ./assets/icon/collapse-mobi.svg 33w,
+                                            ./assets/icon/collapse.svg 50w
+                                        "
+                                        sizes="(max-width: 1199.98px) 33px, 50px"
                                         src="./assets/icon/collapse.svg"
                                         alt=""
                                         class="question-icon__collsape"
@@ -956,7 +1162,11 @@
                             <div class="question-separate"></div>
                         </form>
 
-                        <form class="question-wrapper__form" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
+                        <form
+                            class="question-wrapper__form"
+                            data-aos="zoom-out-up"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <!-- Question 3 -->
                             <input
                                 type="checkbox"
@@ -982,11 +1192,21 @@
                                 </div>
                                 <label for="extend-3" class="form-label">
                                     <img
+                                        srcset="
+                                            ./assets/icon/extend-mobi.svg 33w,
+                                            ./assets/icon/extend.svg 50w
+                                        "
+                                        sizes="(max-width: 1199.98px) 33px, 50px"
                                         src="./assets/icon/extend.svg"
                                         alt=""
                                         class="question-icon__extend"
                                     />
                                     <img
+                                        srcset="
+                                            ./assets/icon/collapse-mobi.svg 33w,
+                                            ./assets/icon/collapse.svg 50w
+                                        "
+                                        sizes="(max-width: 1199.98px) 33px, 50px"
                                         src="./assets/icon/collapse.svg"
                                         alt=""
                                         class="question-icon__collsape"
@@ -996,7 +1216,11 @@
                             <div class="question-separate"></div>
                         </form>
 
-                        <form class="question-wrapper__form" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
+                        <form
+                            class="question-wrapper__form"
+                            data-aos="zoom-out-up"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <!-- Question 4 -->
                             <input
                                 type="checkbox"
@@ -1015,16 +1239,28 @@
                                     <p
                                         class="section--desc question-info__desc"
                                     >
-                                        Vinh Yêu Mi Nhất.
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
                                     </p>
                                 </div>
                                 <label for="extend-4" class="form-label">
                                     <img
+                                        srcset="
+                                            ./assets/icon/extend-mobi.svg 33w,
+                                            ./assets/icon/extend.svg 50w
+                                        "
+                                        sizes="(max-width: 1199.98px) 33px, 50px"
                                         src="./assets/icon/extend.svg"
                                         alt=""
                                         class="question-icon__extend"
                                     />
                                     <img
+                                        srcset="
+                                            ./assets/icon/collapse-mobi.svg 33w,
+                                            ./assets/icon/collapse.svg 50w
+                                        "
+                                        sizes="(max-width: 1199.98px) 33px, 50px"
                                         src="./assets/icon/collapse.svg"
                                         alt=""
                                         class="question-icon__collsape"
@@ -1034,7 +1270,11 @@
                             <div class="question-separate"></div>
                         </form>
 
-                        <form class="question-wrapper__form" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
+                        <form
+                            class="question-wrapper__form"
+                            data-aos="zoom-out-up"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <!-- Question 5 -->
                             <input
                                 type="checkbox"
@@ -1060,11 +1300,21 @@
                                 </div>
                                 <label for="extend-5" class="form-label">
                                     <img
+                                        srcset="
+                                            ./assets/icon/extend-mobi.svg 33w,
+                                            ./assets/icon/extend.svg 50w
+                                        "
+                                        sizes="(max-width: 1199.98px) 33px, 50px"
                                         src="./assets/icon/extend.svg"
                                         alt=""
                                         class="question-icon__extend"
                                     />
                                     <img
+                                        srcset="
+                                            ./assets/icon/collapse-mobi.svg 33w,
+                                            ./assets/icon/collapse.svg 50w
+                                        "
+                                        sizes="(max-width: 1199.98px) 33px, 50px"
                                         src="./assets/icon/collapse.svg"
                                         alt=""
                                         class="question-icon__collsape"
@@ -1080,7 +1330,11 @@
             <!-- Gallery -->
             <section class="gallery">
                 <div class="container g-xl-0">
-                    <div class="gallery-top" data-aos="flip-up" data-aos-anchor-placement="top-center">
+                    <div
+                        class="gallery-top"
+                        data-aos="flip-up"
+                        data-aos-anchor-placement="top-center"
+                    >
                         <h2 class="section--heading-2 gallery-top__heading">
                             My atmosphere
                         </h2>
@@ -1095,7 +1349,11 @@
                     </div>
                     <div class="gallery-list">
                         <!-- Item 1 -->
-                        <div class="gallery-list__item" data-aos="zoom-in-up" data-aos-anchor-placement="top-center">
+                        <div
+                            class="gallery-list__item item-active"
+                            data-aos="zoom-in-up"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <div class="bg">
                                 <img
                                     src="./assets/image/gallery-01.png"
@@ -1106,7 +1364,11 @@
                             <div class="blob"></div>
                         </div>
                         <!-- Item 1 -->
-                        <div class="gallery-list__item" data-aos="zoom-in-up" data-aos-anchor-placement="top-center">
+                        <div
+                            class="gallery-list__item"
+                            data-aos="zoom-in-up"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <div class="bg">
                                 <img
                                     src="./assets/image/gallery-02.png"
@@ -1117,7 +1379,11 @@
                             <div class="blob"></div>
                         </div>
                         <!-- Item 1 -->
-                        <div class="gallery-list__item" data-aos="zoom-in-up" data-aos-anchor-placement="top-center">
+                        <div
+                            class="gallery-list__item"
+                            data-aos="zoom-in-up"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <div class="bg">
                                 <img
                                     src="./assets/image/gallery-03.png"
@@ -1128,6 +1394,13 @@
                             <div class="blob"></div>
                         </div>
                     </div>
+                    <div class="feedback-dots show-on-pc">
+                        <div class="feedback-dot"></div>
+                        <div class="feedback-dot"></div>
+                        <div class="feedback-dot active"></div>
+                        <div class="feedback-dot"></div>
+                        <div class="feedback-dot"></div>
+                    </div>
                 </div>
             </section>
 
@@ -1135,37 +1408,53 @@
             <section class="cta">
                 <div class="container container-cta g-xl-0">
                     <div class="cta-inner">
-                        <div class="cta-wrapper__icon" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                        <div
+                            class="cta-wrapper__icon"
+                            data-aos="flip-up"
+                            data-aos-anchor-placement="center-bottom"
+                        >
                             <img
                                 src="./assets/icon/cta.svg"
                                 alt=""
                                 class="cta-icon"
                             />
                         </div>
-                        <h2 class="section--heading cta-heading" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                        <h2
+                            class="section--heading cta-heading"
+                            data-aos="flip-up"
+                            data-aos-anchor-placement="center-bottom"
+                        >
                             Got a project? Let’s talk
                         </h2>
-                        <p class="section--desc cta-desc" data-aos="zoom-in-up" data-aos-anchor-placement="top-center">
+                        <p
+                            class="section--desc cta-desc"
+                            data-aos="zoom-in-up"
+                            data-aos-anchor-placement="top-center"
+                        >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. In urna, non nisl tincidunt ut elementum
                             turpis.
                         </p>
-                        <div class="cta-wrapper--btn" data-aos="zoom-in-down" data-aos-anchor-placement="center-bottom">
+                        <div
+                            class="cta-wrapper--btn"
+                            data-aos="zoom-in-down"
+                            data-aos-anchor-placement="center-bottom"
+                        >
                             <a href="#!" class="btn cta-btn">Book a Call</a>
                         </div>
 
                         <!-- Deco -->
-                        <span class="cta-deco"></span>
-                        <span class="cta-deco"></span>
-                        <span class="cta-deco"></span>
-                        <span class="cta-deco"></span>
+                        <span class="cta-deco show-on-cta"></span>
+                        <span class="cta-deco show-on-cta"></span>
+                        <span class="cta-deco show-on-cta"></span>
+                        <span class="cta-deco show-on-cta"></span>
                         <span class="cta-deco cta-deco-2"></span>
                         <span class="cta-deco cta-deco-2"></span>
                         <span class="cta-deco cta-deco-2"></span>
                         <span class="cta-deco cta-deco-2"></span>
-                        <span class="cta-deco"></span>
-                        <span class="cta-deco"></span>
-                        <span class="cta-deco"></span>
+                        <span class="cta-deco show-on-cta"></span>
+                        <span class="cta-deco show-on-cta"></span>
+                        <span class="cta-deco show-on-cta"></span>
                     </div>
                 </div>
             </section>
@@ -1173,10 +1462,10 @@
         <footer class="footer">
             <div class="container container-footer g-xl-0">
                 <div class="container container-header g-xl-0">
-                    <div class="header-row">
+                    <div class="header-row footer-row">
                         <!-- Link Address -->
-                        <div class="header-inner">
-                            <div class="header-wrap__address">
+                        <div class="header-inner footer-inner">
+                            <div class="header-wrap__address footer-wrap__address">
                                 <img
                                     src="./assets/icon/heart.svg"
                                     alt=""
@@ -1187,37 +1476,37 @@
                                 hi@arif.interactive
                             </span>
                         </div>
-    
+
                         <!-- Logo -->
-                        <div class="header-wrap__logo">
+                        <div class="header-wrap__logo footer-wrapper__logo">
                             <img
                                 src="./assets/icon/logo.png"
                                 alt=""
                                 class="header-logo"
                             />
                         </div>
-    
+
                         <!-- Nav -->
-    
-                        <nav class="header-nav">
-                            <ul class="header-list">
-                                <li class="header-list__item">
-                                    <a href="#!" class="header-item--link">
+
+                        <nav class="header-nav footer-nav">
+                            <ul class="header-list footer-list">
+                                <li class="header-list__item footer-list__item">
+                                    <a href="#!" class="header-item--link footer-item--link">
                                         Projects
                                     </a>
                                 </li>
-                                <li class="header-list__item">
-                                    <a href="#!" class="header-item--link">
+                                <li class="header-list__item footer-list__item">
+                                    <a href="#!" class="header-item--link footer-item--link">
                                         Journey
                                     </a>
                                 </li>
-                                <li class="header-list__item">
-                                    <a href="#!" class="header-item--link">
+                                <li class="header-list__item footer-list__item">
+                                    <a href="#!" class="header-item--link footer-item--link">
                                         Service
                                     </a>
                                 </li>
-                                <li class="header-list__item">
-                                    <a href="#!" class="header-item--link">
+                                <li class="header-list__item footer-list__item">
+                                    <a href="#!" class="header-item--link footer-item--link">
                                         Contact
                                     </a>
                                 </li>
@@ -1225,26 +1514,23 @@
                         </nav>
                     </div>
                 </div>
-                <div class="footer-separate">
-    
-                </div>
+                <div class="footer-separate show-on-cta"></div>
                 <div class="footer-cpy">
                     <span class="footer-cpy--1">
                         ©interactiveArif 2021. All rights reserved.
                     </span>
+                    <div class="footer-separate show-on-pc"></div>
                     <div class="footer-wrapper__cpy--2">
-                        <span class="footer-cpy--2">
-                            Privacy Policy
-                        </span>
+                        <span class="footer-cpy--2"> Privacy Policy </span>
                         <span class="footer-cpy--separate"></span>
                         <span class="footer-cpy--3">Terms of Conditions</span>
                     </div>
                 </div>
             </div>
-        </footer>   
-         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init();
-        </script>    
+        </script>
     </body>
 </html>
